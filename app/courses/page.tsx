@@ -692,16 +692,16 @@ const allCourses: Course[] = [
                           className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute top-2 left-2 flex gap-1">
-                          <Badge className={getLevelColor(course.level)} size="sm">
+                          <Badge className={getLevelColor(course.level)}>
                             {course.level}
                           </Badge>
                           {course.popular && (
-                            <Badge className="bg-secondary text-secondary-foreground" size="sm">
+                            <Badge className="bg-secondary text-secondary-foreground">
                               Popular
                             </Badge>
                           )}
                           {course.new && (
-                            <Badge className="bg-green-500 text-white" size="sm">
+                            <Badge className="bg-green-500 text-white">
                               New
                             </Badge>
                           )}
