@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 import { Montserrat } from "next/font/google"
 import { ClientLayout } from "./client-layout"
+import { Analytics } from "@vercel/analytics/react"  // ✅ fixed import path
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -14,7 +15,8 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "GTLA - God's Teachings Leadership Academy",
-  description: "Empowering Faith-Centered Leaders through comprehensive leadership programs, courses, and mentorship.",
+  description:
+    "Empowering Faith-Centered Leaders through comprehensive leadership programs, courses, and mentorship.",
 }
 
 export default function RootLayout({
@@ -24,9 +26,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${montserrat.variable}`}>
+      <body
+        className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${montserrat.variable}`}
+      >
         <ClientLayout>{children}</ClientLayout>
+        {/* ✅ Add Vercel Analytics */}
+        <Analytics />
       </body>
     </html>
   )
 }
+
