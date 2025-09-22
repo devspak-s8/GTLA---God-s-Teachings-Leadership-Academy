@@ -13,97 +13,76 @@ export function FAQSection() {
   }
 
   const faqs = [
-    {
-      category: "General",
-      questions: [
-        {
-          question: "What is GTLA and what makes it different?",
-          answer:
-            "GTLA (God's Teachings Leadership Academy) is a faith-centered leadership development organization that combines biblical principles with modern leadership theory. What makes us different is our holistic approach that develops not just leadership skills, but character, integrity, and spiritual foundation.",
-        },
-        {
-          question: "Who can enroll in GTLA programs?",
-          answer:
-            "Our programs are designed for individuals of all ages and backgrounds who want to develop their leadership potential. We offer specialized programs for youth (16-25), adults, and executives. No prior leadership experience is required for our foundation programs.",
-        },
-        {
-          question: "Do I need to be a Christian to participate?",
-          answer:
-            "While our programs are rooted in Christian principles, we welcome individuals from all faith backgrounds who are interested in character-based leadership development. We create an inclusive environment that respects diverse perspectives while maintaining our faith-centered approach.",
-        },
-      ],
-    },
-    {
-      category: "Programs & Courses",
-      questions: [
-        {
-          question: "How long are the leadership programs?",
-          answer:
-            "Program lengths vary: Foundation Leadership (3 months), Advanced Leadership Intensive (6 months), and Executive Leadership Mastery (12 months). All programs are designed to be flexible and accommodate busy schedules with both self-paced and live components.",
-        },
-        {
-          question: "Are the courses self-paced or scheduled?",
-          answer:
-            "Our courses combine the best of both approaches. Core content is available for self-paced learning, while live sessions, group discussions, and mentoring calls are scheduled. This hybrid model provides flexibility while maintaining community connection.",
-        },
-        {
-          question: "What kind of support do students receive?",
-          answer:
-            "Students receive comprehensive support including personal mentors, peer groups, weekly office hours, resource materials, and access to our alumni network. We also provide technical support and academic guidance throughout the program.",
-        },
-        {
-          question: "Do you offer certificates or credentials?",
-          answer:
-            "Yes, all our programs include certificates of completion. Our Advanced and Executive programs also offer continuing education credits. We're working toward accreditation to provide even more valuable credentials for our graduates.",
-        },
-      ],
-    },
-    {
-      category: "Enrollment & Payment",
-      questions: [
-        {
-          question: "How much do the programs cost?",
-          answer:
-            "Program costs range from $299 (Foundation) to $1,199 (Executive Mastery). We offer payment plans, scholarships, and group discounts. The investment includes all materials, mentoring, and lifetime access to our alumni community.",
-        },
-        {
-          question: "Do you offer payment plans or scholarships?",
-          answer:
-            "Yes! We offer flexible payment plans (3, 6, or 12 months) and need-based scholarships. We believe financial constraints shouldn't prevent anyone from developing their leadership potential. Contact us to discuss options.",
-        },
-        {
-          question: "What's included in the program fee?",
-          answer:
-            "The program fee includes all course materials, video content, workbooks, personal mentoring, group sessions, access to our online community, and a certificate of completion. There are no hidden fees or additional costs.",
-        },
-        {
-          question: "Is there a money-back guarantee?",
-          answer:
-            "Yes, we offer a 30-day satisfaction guarantee. If you're not completely satisfied with your program within the first 30 days, we'll provide a full refund. We're confident in the value our programs provide.",
-        },
-      ],
-    },
-    {
-      category: "Events & Community",
-      questions: [
-        {
-          question: "How often do you host events and workshops?",
-          answer:
-            "We host events throughout the year including our annual Leadership Summit, quarterly workshops, monthly webinars, and seasonal retreats. Students and alumni receive priority registration and discounted rates for all events.",
-        },
-        {
-          question: "Can I attend events without being enrolled in a program?",
-          answer:
-            "Many of our events are open to the public. This is a great way to experience GTLA's approach and meet our community before enrolling in a full program. Check our events calendar for upcoming opportunities.",
-        },
-        {
-          question: "How do I stay connected with other students and alumni?",
-          answer:
-            "We have an active online community platform, regular alumni meetups, mentorship programs, and networking events. Once you're part of GTLA, you're part of our lifelong community of faith-centered leaders.",
-        },
-      ],
-    },
-  ]
+  {
+    category: "General",
+    questions: [
+      {
+        question: "What is GTLA?",
+        answer:
+          "GTLA (God's Teachings Leadership Academy) is a faith-based leadership school that blends biblical principles with modern leadership training.",
+      },
+      {
+        question: "Who can enroll?",
+        answer:
+          "Anyone seeking leadership growth—youth, adults, or executives. No prior experience required.",
+      },
+  
+    ],
+  },
+  {
+    category: "Programs & Courses",
+    questions: [
+      {
+        question: "How long are programs?",
+        answer:
+          "Foundation: 3 months, Advanced: 6 months, Executive: 12 months.",
+      },
+   
+      {
+        question: "What support is provided?",
+        answer:
+          "Mentors, peer groups, resources, office hours, and alumni access.",
+      },
+      {
+        question: "Do you issue certificates?",
+        answer:
+          "Yes. Advanced and Executive tracks include continuing education credits.",
+      },
+    ],
+  },
+  {
+    category: "Enrollment & Payment",
+    questions: [
+      {
+        question: "How much does it cost?",
+        answer:
+          "Foundation: $299, Executive: $1,199. Payment plans and scholarships available.",
+      },
+     
+      {
+        question: "Is there a refund policy?",
+        answer:
+          "Yes, a 30-day money-back guarantee.",
+      },
+    ],
+  },
+  {
+    category: "Events & Community",
+    questions: [
+      {
+        question: "Do you host events?",
+        answer:
+          "Yes—annual summits, workshops, webinars, and retreats.",
+      },
+      {
+        question: "Can non-students attend?",
+        answer:
+          "Yes, many events are open to the public.",
+      },
+
+    ],
+  },
+]
 
   return (
     <section className="py-20 bg-card">

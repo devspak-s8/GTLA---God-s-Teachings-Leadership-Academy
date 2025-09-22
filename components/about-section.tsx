@@ -21,22 +21,7 @@ export function AboutSection() {
       color: "text-blue-500",
       bgColor: "bg-blue-50",
     },
-    {
-      icon: Users,
-      title: "Community",
-      description:
-        "Building a supportive network of like-minded leaders who encourage and challenge each other to grow.",
-      color: "text-green-500",
-      bgColor: "bg-green-50",
-    },
-    {
-      icon: Shield,
-      title: "Integrity",
-      description:
-        "Leading with honesty, transparency, and moral excellence in all aspects of personal and professional life.",
-      color: "text-purple-500",
-      bgColor: "bg-purple-50",
-    },
+  
   ]
 
   return (
@@ -148,43 +133,7 @@ export function AboutSection() {
     </div>
 </div>
 
-        {/* Core Values */}
-        <div className="mb-12 sm:mb-16">
-          <ScrollFadeIn>
-            <div className="text-center mb-12 sm:mb-16">
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-card-foreground mb-4 font-[family-name:var(--font-montserrat)]">
-                Our Core <span className="gtla-text-gradient">Values</span>
-              </h3>
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                The foundational principles that guide everything we do at GTLA
-              </p>
-            </div>
-          </ScrollFadeIn>
-
-          <ScrollStagger>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-              {values.map((value, index) => (
-                <ScrollSlideIn key={index} direction="up" delay={index * 120}>
-                  <Card className="group text-center p-6 sm:p-8 bg-white border-0 gtla-shadow hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 rounded-2xl">
-                    <CardContent className="pt-4 sm:pt-6">
-                      <div
-                        className={`w-16 h-16 sm:w-20 sm:h-20 ${value.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        <value.icon className={`h-8 w-8 sm:h-10 sm:w-10 ${value.color}`} />
-                      </div>
-                      <h4 className="text-lg sm:text-xl font-bold text-card-foreground mb-2 sm:mb-4 font-[family-name:var(--font-montserrat)]">
-                        {value.title}
-                      </h4>
-                      <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
-                        {value.description}
-                      </p>
-                    </CardContent>
-                  </Card>
-                </ScrollSlideIn>
-              ))}
-            </div>
-          </ScrollStagger>
-        </div>
+      
 
         {/* CTA */}
         <ScrollFadeIn>

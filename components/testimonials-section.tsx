@@ -155,37 +155,10 @@ export function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Testimonial Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {testimonials.slice(0, 3).map((testimonial) => (
-            <Card key={testimonial.id} className="bg-white hover:shadow-lg transition-shadow">
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4">
-                  <img
-                    src={testimonial.image || "/placeholder.svg"}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h4 className="font-semibold text-card-foreground">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
-                </div>
-                <div className="flex mb-3">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 text-amber-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="text-sm text-card-foreground leading-relaxed italic">
-                  "{testimonial.quote.substring(0, 120)}..."
-                </blockquote>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        
 
         {/* Stats */}
-        <div className="grid md:grid-cols-4 gap-8 text-center">
+        <div className="hidden lg;grid lg:grid-cols-4 lg:gap-8 lg:text-center">
           <div>
             <div className="text-3xl font-bold text-primary mb-2">500+</div>
             <div className="text-sm text-muted-foreground">Students Transformed</div>

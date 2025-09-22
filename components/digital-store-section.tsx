@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ShoppingCart, Download, BookOpen, Heart, Star, Gift } from "lucide-react"
+import Link from "next/link"
+import { ShoppingCart, Download, BookOpen, Heart, Star, Gift, ArrowRight } from "lucide-react"
 import { ScrollFadeIn, ScrollSlideIn, ScrollStagger } from "./scroll-animations"
 
 export function DigitalStoreSection() {
@@ -44,43 +45,7 @@ export function DigitalStoreSection() {
     reviews: 89,
     features: ["200+ Pages", "Case Studies", "Practical Exercises", "Bonus Resources"],
   },
-  {
-    id: 4,
-    title: "S8Globals Branded Water Bottle",
-    description:
-      "Stay hydrated while representing your commitment to innovative leadership.",
-    image: "https://images.unsplash.com/photo-1571687949920-0185b3e6ca90", // premium water bottle
-    price: 24.99,
-    type: "Physical",
-    rating: 4.7,
-    reviews: 45,
-    features: ["32oz Capacity", "Insulated Design", "Premium Logo", "BPA Free"],
-  },
-  {
-    id: 5,
-    title: "Leadership Assessment Toolkit",
-    description:
-      "Digital toolkit with assessments, templates, and guides for evaluating and developing leadership skills.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df", // papers, templates, laptop
-    price: 49.99,
-    originalPrice: 69.99,
-    type: "Digital Bundle",
-    rating: 4.8,
-    reviews: 124,
-    features: ["5 Assessment Tools", "Development Plans", "Team Exercises", "Progress Trackers"],
-  },
-  {
-    id: 6,
-    title: "Inspirational Leadership Poster Set",
-    description:
-      "Beautiful set of 6 motivational posters featuring leadership quotes and professional design.",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f", // posters on wall
-    price: 34.99,
-    type: "Digital Prints",
-    rating: 4.6,
-    reviews: 67,
-    features: ["6 High-Res Designs", "Multiple Sizes", "Print-Ready Files", "Commercial License"],
-  },
+ 
 ];
 
   const getTypeColor = (type: string) => {
@@ -112,6 +77,7 @@ export function DigitalStoreSection() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="mb-24">
         <ScrollFadeIn>
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black text-card-foreground mb-6 font-[family-name:var(--font-montserrat)]">
@@ -123,24 +89,7 @@ export function DigitalStoreSection() {
             </p>
           </div>
         </ScrollFadeIn>
-
-        <ScrollSlideIn direction="up">
-          <div className="gtla-gradient rounded-2xl p-8 mb-12 text-white relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-white/10 to-transparent"></div>
-            <div className="flex flex-col md:flex-row items-center justify-between relative z-10">
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Special Launch Offer</h3>
-                <p className="text-white/90">Get 25% off your first purchase with code LEADER25</p>
-              </div>
-              <div className="mt-4 md:mt-0">
-                <Button size="lg" className="bg-white text-primary hover:bg-gray-100 font-semibold shadow-lg">
-                  <Gift className="w-5 h-5 mr-2" />
-                  Shop Now
-                </Button>
-              </div>
-            </div>
-          </div>
-        </ScrollSlideIn>
+</div>
 
         <ScrollStagger>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -229,8 +178,7 @@ export function DigitalStoreSection() {
         </ScrollStagger>
 
         <ScrollStagger>
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {[
+         <div className="hidden lg:grid lg:grid-cols-3 gap-8 mb-12"> {[
               { icon: Download, title: "Instant Download", desc: "Get digital products immediately after purchase" },
               { icon: Heart, title: "Satisfaction Guarantee", desc: "30-day money-back guarantee on all purchases" },
               { icon: Gift, title: "Member Discounts", desc: "Exclusive discounts for GTLA program members" },
@@ -248,18 +196,6 @@ export function DigitalStoreSection() {
           </div>
         </ScrollStagger>
 
-        {/* CTA */}
-        <ScrollFadeIn>
-          <div className="text-center">
-            <Button
-              variant="outline"
-              size="lg"
-              className="px-8 bg-white/80 backdrop-blur-sm border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300"
-            >
-              Browse All Products
-            </Button>
-          </div>
-        </ScrollFadeIn>
       </div>
     </section>
   )

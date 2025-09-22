@@ -18,7 +18,6 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection />
-        <EnrollmentSection />
         <CoursesSection />
         <DigitalStoreSection />
         <DiscoveryCallSection />
